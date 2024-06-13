@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class EstruturaDeRepeticao {
     public static void main(String[] args) {
@@ -17,6 +17,27 @@ public class EstruturaDeRepeticao {
                 System.out.println("Tente novamente.");
             }
         }
+        scanner.close();
+    }
+}*/
+import java.util.Scanner;
+
+public class EstruturaDeRepeticao {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int numero = scanner.nextInt();
+        int soma = numero;
+
+        while (soma < 10) {
+            soma++;
+            System.out.println("Somando 1... Soma atual: " + soma);
+        }
+
+        System.out.println("Parabéns! A soma atingiu 10.");
+        System.out.println();
         scanner.close();
     }
 }
