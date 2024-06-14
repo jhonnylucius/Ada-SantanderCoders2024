@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ExemploDeFuncoes {
 
-    public static void main(String[] args, String somArrayList) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite um número: ");
@@ -15,14 +15,14 @@ public class ExemploDeFuncoes {
         while (soma < 10) {
             soma++;
             System.out.println("Somando 1... Soma atual: " + soma);
-
-            somaArrayList.add(soma); // Adiciona o número par à lista
+            
+            somaArrayList.add(soma); 
             
         } 
 
     System.out.println("Parabéns! A soma atingiu 10.");
-    // Imprime a lista de números pares
-    System.out.println("Números encontrados: " + somArrayList);
+
+    System.out.println("Números encontrados: " + somaArrayList);
    System.out.println();
     scanner.close();
 }
